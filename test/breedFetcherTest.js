@@ -21,10 +21,10 @@ describe('fetchBreedDescription', () => {
       // we expect desc to be null
       assert.equal(desc, null);
 
-      const expectedErr = 'Sorry, Doggy was not found.';
+      const expectedErr = 'Sorry, Doggy could not be found.';
 
       // compare returned description
-      assert.equal(expectedErr, err.trim());
+      assert.equal(expectedErr, err);
 
       done();
     });
